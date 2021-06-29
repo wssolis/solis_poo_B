@@ -8,6 +8,7 @@ package ec.edu.intsuperior.vista;
 import ec.edu.intsuperior.modelo.Autor;
 import ec.edu.intsuperior.modelo.Biblioteca;
 import ec.edu.intsuperior.modelo.Libro;
+import ec.edu.intsuperior.modelo.Usuario;
 
 /**
  *
@@ -18,7 +19,8 @@ public class Aplicacion {
         
         Autor au1= new Autor("Juan de Alcazar","123456789", "20/05/1984");
         Libro li1= new Libro("ISBN2021-1","La belleza en la programación","int-superior", au1);
-        Biblioteca biblio1 = new Biblioteca("Central Cayambe","Remigio Crespo", li1, 0);
+        Usuario user = new Usuario("Jaun Perez","0987654","15/09/2001","USER-098");
+        Biblioteca biblio1 = new Biblioteca("Central Cayambe","Remigio Crespo", li1,40,user);
         
         
         

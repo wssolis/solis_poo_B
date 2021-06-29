@@ -10,21 +10,31 @@ package ec.edu.intsuperior.modelo;
  * @author SANTIAGO SOLIS
  */
 public class Biblioteca {
+
     private String nombre;
     private String direccion;
     private Libro libro;  //tipo de dato abstracto TDA
     private int aforo;
-    
-    //Constructores
+    private Usuario usuario;
 
+    //Constructores
     public Biblioteca() {
     }
 
-    public Biblioteca(String nombre, String direccion, Libro libro, int aforo) {
+    public Biblioteca(String nombre, String direccion, Libro libro, int aforo, Usuario usuario) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.libro = libro;
         this.aforo = aforo;
+        this.usuario = usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
     }
 
     public String getNombre() {
@@ -58,6 +68,5 @@ public class Biblioteca {
     public void setAforo(int aforo) {
         this.aforo = aforo;
     }
-    
-    
+
 }
